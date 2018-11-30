@@ -1,0 +1,38 @@
+# Compiled Python files
+*.pyc
+
+# Ansible retry files
+*.retry
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Archives
+*.tar.gz
+*.tgz
+*.zip
+
+# Local Vagrant directory
+.vagrant
+
+# Ansible host_vars and tower_cli_data
+host_vars/*
+tower_cli_data/*
+
+# # Roles should be pulled from galaxy
+# roles/*
+# # Except for requirements files
+# !roles/requirements*.yml
+
+current/*
+target_sub/*
+target_duff/*

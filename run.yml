@@ -12,7 +12,7 @@
         var: ansible_version.full
 
     - name: launch ansible runner with current version of ansible
-      command: "{{ runner }} {{playbook_dir}}/sub.yml run current_sub"
+      command: "{{ runner }} {{playbook_dir}}/sub.yml run current"
       register: current_sub_out
 
     - name: debug sub playbook with current version of ansible

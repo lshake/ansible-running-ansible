@@ -1,8 +1,0 @@
-[1;35m [WARNING]: Could not match supplied host pattern, ignoring: slave[0m
-[1;35m[0m
-
-PLAY [launch an ansible-runner job with another version of ansible] ************
-[0;36mskipping: no hosts matched[0m
-
-PLAY RECAP *********************************************************************
-
