@@ -1,0 +1,2 @@
+slave ansible_host='slave.home.shakey.org'
+

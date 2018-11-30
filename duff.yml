@@ -1,0 +1,10 @@
+---
+- name: launch an ansible-runner job with another version of ansible
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: debug ansible version
+      debug:
+      var: ansible_version.full
+

@@ -1,0 +1,19 @@
+
+PLAY [launch an ansible-runner job with another version of ansible] ************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [slave][0m
+
+TASK [debug ansible version] ***************************************************
+[0;32mok: [slave] => {[0m
+[0;32m    "ansible_version.full": "2.7.1"[0m
+[0;32m}[0m
+
+TASK [debug ansible version] ***************************************************
+[0;32mok: [slave] => {[0m
+[0;32m    "ansible_default_ipv4.address": "192.168.13.51"[0m
+[0;32m}[0m
+
+PLAY RECAP *********************************************************************
+[0;32mslave[0m                      : [0;32mok=3   [0m changed=0    unreachable=0    failed=0   
+

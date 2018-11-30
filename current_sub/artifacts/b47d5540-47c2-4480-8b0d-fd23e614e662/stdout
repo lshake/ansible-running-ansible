@@ -1,0 +1,13 @@
+
+PLAY [launch an ansible-runner job with another version of ansible] ************
+
+TASK [debug ansible version] ***************************************************
+[0;32mok: [localhost] => {
+    "ansible_version.full": "2.2.1.0"
+}[0m
+[0;32mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    failed=0   
+
+
+PLAY RECAP *********************************************************************
+[0;32mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    failed=0   
+

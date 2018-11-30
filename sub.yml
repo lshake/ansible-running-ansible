@@ -1,0 +1,13 @@
+---
+- name: launch an ansible-runner job with another version of ansible
+  hosts: slave
+  gather_facts: true
+
+  tasks:
+    - name: debug ansible version
+      debug:
+        var: ansible_version.full
+
+    - name: debug ansible version
+      debug:
+        var: ansible_default_ipv4.address

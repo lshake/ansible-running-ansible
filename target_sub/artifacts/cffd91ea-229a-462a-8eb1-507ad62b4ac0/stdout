@@ -1,0 +1,11 @@
+
+PLAY [launch an ansible-runner job with another version of ansible] ************
+
+TASK [debug ansible version] ***************************************************
+[0;32mok: [localhost] => {[0m
+[0;32m    "ansible_version.novariablehere": "VARIABLE IS NOT DEFINED!"[0m
+[0;32m}[0m
+
+PLAY RECAP *********************************************************************
+[0;32mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    failed=0   
+

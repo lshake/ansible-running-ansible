@@ -1,0 +1,41 @@
+---
+- name: launch an ansible-runner job with another version of ansible
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+     runner: "ansible-runner --inventory ./inventory --playbook"
+
+  tasks:
+    - name: debug current ansible version
+      debug:
+        var: ansible_version.full
+
+    - name: launch ansible runner with current version of ansible
+      command: "{{ runner }} {{playbook_dir}}/sub.yml run current_sub"
+      register: current_sub_out
+
+    - name: debug sub playbook with current version of ansible
+      debug:
+        var: current_sub_out.stdout
+
+    - name: launch ansible runner with target version of ansible
+      command: "{{ runner }} {{playbook_dir}}/sub.yml run target_sub"
+      environment:
+        PATH: /Users/lshakesp/projects/ansible/python/2.7.1/bin
+      register: target_sub_out
+
+    - name: debug sub playbook with target version of ansible
+      debug:
+        var: target_sub_out.stdout
+
+    - name: launch ansible runner with target version of ansible and a broken playbook
+      command: "{{ runner }} {{playbook_dir}}/duff.yml run target_duff"
+      environment:
+        PATH: /Users/lshakesp/projects/ansible/python/2.7.1/bin
+      register: target_sub_out
+
+    - name: debug sub playbook with target version of ansible
+      debug:
+        var: target_sub_out.stdout
+
